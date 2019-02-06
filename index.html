@@ -111,6 +111,8 @@ p.sansserif {
 
 				<p class="sansserif">☎️ Điện thoại liên hệ:</p>
 				<input id="dienthoai" type="tel" name="dienthoai" class="form-control" style="text-align: center;" value="0">
+				<p class="sansserif">⏲ Ngày sinh:</p>
+				<input id="ngaysinh" type="date" name="ngaysinh" class="form-control" style="text-align: center;" value="0" value="2000-01-01">
 				<p class="sansserif">🏡 Địa chỉ giao hàng:</p>
 				<select id="tinh_tp-select" name="tinh_tp">
 					<option disabled value="-1" selected>Thành phố/Tỉnh</option>
@@ -293,6 +295,12 @@ p.sansserif {
 				hoten = $("#hoten").val();
 				subscriber_id = getUrlParameter("subscriber_id");
 
+				date = new Date($('#ngaysinh').val());
+				day = date.getDate();
+				month = date.getMonth() + 1;
+				year = date.getFullYear();
+				ngaysinh = [day, month, year].join('-')
+
 				$.ajax({
 					type: 'POST',
 					url: 'https://sonshi-official.herokuapp.com/create-new-data-entry',
@@ -300,6 +308,7 @@ p.sansserif {
 						"subscriber_id": subscriber_id,
 						"hoten": hoten,
 						"diachi": diachi,
+						"ngaysinh": ngaysinh,
 						"dienthoai": dienthoai
 					},
 					dataType: 'json',
