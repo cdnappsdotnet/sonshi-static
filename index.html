@@ -1,0 +1,320 @@
+<html>
+
+<head>
+	<title>Đăng ký Nhận quà tặng</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+	<!-- bootstrap styles -->
+	<script id="Messenger" src="//connect.facebook.com/en_US/messenger.Extensions.js"></script>
+
+	<style>
+		input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=tel], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.footer {
+	margin-top: 25px;
+	padding: 15px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+#done-btn {
+	cursor: pointer;
+}
+.button {
+  background-color: #0078D7; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.button4 {border-radius: 12px;}
+p.sansserif {
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+</style>
+	
+</head>
+
+<body style="background-color: rgb(0, 120, 215);">
+
+	<!-- messenger extensions sdk -->
+	<script type="text/javascript">
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {
+				return;
+			}
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "//connect.facebook.com/en_US/messenger.Extensions.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'Messenger'));
+	</script>
+	<!-- /messenger extensions sdk -->
+	<center><img src="blank.jpg" height="0"></center>
+	<h3>
+		<center>
+			<p class="sansserif" style="color:#FFFFFF;">Đăng ký Nhận quà tặng</p>
+		</center>
+	</h3>
+	<div class="container" style="max-width: 50rem; margin-left: auto; margin-right: auto">
+
+		<!--<p><center><span style="color: #ff0000;">Nếu bị lỗi nhập thông tin (trên điện thoại), xin hãy chuyển bàn phím sang chế độ gõ tiếng Anh và tiếp tục bỏ dấu theo kiểu Telex hoặc VNI</span></center></p> -->
+		<form name="frm" _lpchecked="1">
+			<center>
+				<p class="sansserif">👤 Họ tên đầy đủ:</p>
+				<input id="hoten" type="text" name="hoten" class="form-control" style="text-align: center; color: red; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;"
+				 value="">
+
+				<p class="sansserif">☎️ Điện thoại liên hệ:</p>
+				<input id="dienthoai" type="tel" name="dienthoai" class="form-control" style="text-align: center;" value="0">
+				<p class="sansserif">🏡 Địa chỉ giao hàng:</p>
+				<select id="tinh_tp-select" name="tinh_tp">
+					<option disabled value="-1" selected>Thành phố/Tỉnh</option>
+					<option value="01">Thành phố Hà Nội</option>
+					<option value="02">Tỉnh Hà Giang</option>
+					<option value="04">Tỉnh Cao Bằng</option>
+					<option value="06">Tỉnh Bắc Kạn</option>
+					<option value="08">Tỉnh Tuyên Quang</option>
+					<option value="10">Tỉnh Lào Cai</option>
+					<option value="11">Tỉnh Điện Biên</option>
+					<option value="12">Tỉnh Lai Châu</option>
+					<option value="14">Tỉnh Sơn La</option>
+					<option value="15">Tỉnh Yên Bái</option>
+					<option value="17">Tỉnh Hoà Bình</option>
+					<option value="19">Tỉnh Thái Nguyên</option>
+					<option value="20">Tỉnh Lạng Sơn</option>
+					<option value="22">Tỉnh Quảng Ninh</option>
+					<option value="24">Tỉnh Bắc Giang</option>
+					<option value="25">Tỉnh Phú Thọ</option>
+					<option value="26">Tỉnh Vĩnh Phúc</option>
+					<option value="27">Tỉnh Bắc Ninh</option>
+					<option value="30">Tỉnh Hải Dương</option>
+					<option value="31">Thành phố Hải Phòng</option>
+					<option value="33">Tỉnh Hưng Yên</option>
+					<option value="34">Tỉnh Thái Bình</option>
+					<option value="35">Tỉnh Hà Nam</option>
+					<option value="36">Tỉnh Nam Định</option>
+					<option value="37">Tỉnh Ninh Bình</option>
+					<option value="38">Tỉnh Thanh Hóa</option>
+					<option value="40">Tỉnh Nghệ An</option>
+					<option value="42">Tỉnh Hà Tĩnh</option>
+					<option value="44">Tỉnh Quảng Bình</option>
+					<option value="45">Tỉnh Quảng Trị</option>
+					<option value="46">Tỉnh Thừa Thiên Huế</option>
+					<option value="48">Thành phố Đà Nẵng</option>
+					<option value="49">Tỉnh Quảng Nam</option>
+					<option value="51">Tỉnh Quảng Ngãi</option>
+					<option value="52">Tỉnh Bình Định</option>
+					<option value="54">Tỉnh Phú Yên</option>
+					<option value="56">Tỉnh Khánh Hòa</option>
+					<option value="58">Tỉnh Ninh Thuận</option>
+					<option value="60">Tỉnh Bình Thuận</option>
+					<option value="62">Tỉnh Kon Tum</option>
+					<option value="64">Tỉnh Gia Lai</option>
+					<option value="66">Tỉnh Đắk Lắk</option>
+					<option value="67">Tỉnh Đắk Nông</option>
+					<option value="68">Tỉnh Lâm Đồng</option>
+					<option value="70">Tỉnh Bình Phước</option>
+					<option value="72">Tỉnh Tây Ninh</option>
+					<option value="74">Tỉnh Bình Dương</option>
+					<option value="75">Tỉnh Đồng Nai</option>
+					<option value="77">Tỉnh Bà Rịa - Vũng Tàu</option>
+					<option value="79">Thành phố Hồ Chí Minh</option>
+					<option value="80">Tỉnh Long An</option>
+					<option value="82">Tỉnh Tiền Giang</option>
+					<option value="83">Tỉnh Bến Tre</option>
+					<option value="84">Tỉnh Trà Vinh</option>
+					<option value="86">Tỉnh Vĩnh Long</option>
+					<option value="87">Tỉnh Đồng Tháp</option>
+					<option value="89">Tỉnh An Giang</option>
+					<option value="91">Tỉnh Kiên Giang</option>
+					<option value="92">Thành phố Cần Thơ</option>
+					<option value="93">Tỉnh Hậu Giang</option>
+					<option value="94">Tỉnh Sóc Trăng</option>
+					<option value="95">Tỉnh Bạc Liêu</option>
+					<option value="96">Tỉnh Cà Mau</option>
+				</select><br>
+				<select id="quan_huyen-select" name="quan_huyen" style="display: inline;">
+					<option value="-1" disabled selected>Quận/Huyện</option>
+				</select><br>
+				<select id="phuong_xa-select" name="phuong_xa" style="display: inline;">
+					<option value="-1" disabled selected>Xã/Phường/Thị trấn</option>
+				</select>
+
+				<input id="diachi-input" type="text" name="diachi" class="form-control" style="text-align: center;" value="" placeholder="Số nhà - Đường">
+
+
+			</center>
+		</form>
+		<center><button type="submit" onclick="return submitForm();" id="done-btn" class="button button4">📤GỬI THÔNG TIN</button></center>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+
+			// Update list quận/huyện khi tỉnh/thành thay đổi
+			$("#tinh_tp-select").change(function () {
+
+				// Xác định tỉnh
+				parentID = $(this).children("option:selected").first().val();
+
+				if (parentID != "-1") {
+					$.get( "quan-huyen/"+parentID+".json", function( data ) {
+						
+						// Xóa dữ liệu xã phường
+						$("#phuong_xa-select").html('<option value="-1" disabled selected>Xã/Phường/Thị trấn</option>');
+						
+
+						// Cập nhật dữ liệu quận/huyện
+						$("#quan_huyen-select").html('<option value="-1" disabled selected>Quận/Huyện</option><');
+
+						for (var key in data) {
+							if (data.hasOwnProperty(key)) {
+								$("#quan_huyen-select").append('<option value="'+key+'">'+data[key]['name_with_type']+'</option>');
+							}
+						}
+
+					});
+				}
+
+			});
+
+
+			// Update list phường / xã khi quận / huyện thay đổi
+			$("#quan_huyen-select").change(function () {
+
+				// Xác định quận/huyện
+				parentID = $(this).children("option:selected").first().val();
+
+				if (parentID != "-1") {
+					$.get( "xa-phuong/"+parentID+".json", function( data ) {
+						
+						// Cập nhật dữ liệu xã phường
+						$("#phuong_xa-select").html('<option value="-1" disabled selected>Xã/Phường/Thị trấn</option>');
+
+						for (var key in data) {
+							if (data.hasOwnProperty(key)) {
+								$("#phuong_xa-select").append('<option value="'+key+'">'+data[key]['name_with_type']+'</option>');
+							}
+						}
+
+					});
+				}
+
+			});
+
+		</script>
+	</div>
+
+	<script type="text/javascript">
+
+		var getUrlParameter = function getUrlParameter(sParam) {
+			var sPageURL = window.location.search.substring(1),
+				sURLVariables = sPageURL.split('&'),
+				sParameterName,
+				i;
+
+			for (i = 0; i < sURLVariables.length; i++) {
+				sParameterName = sURLVariables[i].split('=');
+
+				if (sParameterName[0] === sParam) {
+					return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+				}
+			}
+		};
+
+		function submitForm() {
+			if (document.forms['frm'].hoten.value === "") {
+				alert("Bạn chưa điền họ tên");
+			} else if (document.forms['frm'].dienthoai.value.length < 10 || document.forms['frm'].dienthoai.value.length > 13) {
+				alert("Bạn chưa điền hoặc sai số điện thoại");
+			} else if (document.forms['frm'].tinh_tp.value === "Thành phố/Tỉnh" || document.forms['frm'].tinh_tp.value === "-1") {
+				alert("Bạn chưa chọn Tỉnh/Thành phố");
+			} else if (document.forms['frm'].quan_huyen.value === "Quận/Huyện" || document.forms['frm'].quan_huyen.value === "-1") {
+				alert("Bạn chưa chọn Quận/Huyện");
+			} else if (document.forms['frm'].phuong_xa.value === "Xã/Phường/Thị trấn" || document.forms['frm'].phuong_xa.value === "-1") {
+				alert("Bạn chưa chọn Phường/Xã");
+			} else if (document.forms['frm'].diachi.value === "") {
+				alert("Bạn chưa điền địa chỉ nhà, tên đường");
+			} else {
+
+				diachi = $("#diachi-input").val()
+					+ ", " + $("#phuong_xa-select option:selected").text()
+					+ ", " + $("#quan_huyen-select option:selected").text()
+					+ ", " + $("#tinh_tp-select option:selected").text();
+
+				dienthoai = $("#dienthoai").val();
+				hoten = $("#hoten").val();
+				subscriber_id = getUrlParameter("subscriber_id");
+
+				$.ajax({
+					type: 'POST',
+					url: 'https://sonshi-official.herokuapp.com/create-new-data-entry',
+					data: {
+						"subscriber_id": subscriber_id,
+						"hoten": hoten,
+						"diachi": diachi,
+						"dienthoai": dienthoai
+					},
+					dataType: 'json',
+					success: function (data) {
+						console.log(data);
+						MessengerExtensions.requestCloseBrowser();
+					}
+				});
+
+				// MessengerExtensions.requestCloseBrowser();
+
+			} //return true;
+		}
+	</script>
+
+</body>
+
+</html>
